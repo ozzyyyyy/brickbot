@@ -1,0 +1,1 @@
+This folder will contain your BrickBot project. If you already downloaded the full project, ignore this placeholder.
