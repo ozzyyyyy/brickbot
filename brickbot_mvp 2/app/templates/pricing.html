@@ -1,0 +1,36 @@
+
+{% extends 'marketing_base.html' %}
+{% block content %}
+<section class="container py-14">
+  <h1 class="text-3xl font-bold">Pricing</h1>
+  <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="bg-white rounded-xl p-6 shadow-sm">
+      <div class="text-sm text-slate-500">Starter</div>
+      <div class="text-3xl font-extrabold mt-2">£0</div>
+      <div class="text-sm text-slate-500">Local demo</div>
+      <ul class="list-disc ml-5 text-sm mt-3">
+        <li>CSV import</li><li>Lead & property tables</li><li>Email console</li>
+      </ul>
+      <a href="{{ trial_url }}" class="btn-brand px-4 py-2 rounded-md inline-block mt-4">Try now</a>
+    </div>
+    <div class="bg-white rounded-xl p-6 shadow-sm ring-2 ring-sky-200">
+      <div class="text-sm text-slate-500">Pro</div>
+      <div class="text-3xl font-extrabold mt-2">£?? / branch / mo</div>
+      <div class="text-sm text-slate-500">SaaS (planned)</div>
+      <ul class="list-disc ml-5 text-sm mt-3">
+        <li>Auth & multi-branch</li><li>WhatsApp</li><li>AML/IDV hooks</li>
+      </ul>
+      <a href="/ui" class="btn-brand px-4 py-2 rounded-md inline-block mt-4">Book a demo</a>
+    </div>
+    <div class="bg-white rounded-xl p-6 shadow-sm">
+      <div class="text-sm text-slate-500">Enterprise</div>
+      <div class="text-3xl font-extrabold mt-2">Custom</div>
+      <div class="text-sm text-slate-500">Self-hosted</div>
+      <ul class="list-disc ml-5 text-sm mt-3">
+        <li>Custom integrations</li><li>On-prem options</li><li>SLAs</li>
+      </ul>
+      <a href="/ui" class="px-4 py-2 rounded-md border inline-block mt-4">Talk to us</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
